@@ -1,3 +1,5 @@
+sudo chmod 777 /var/www/html/mongodb/
+sudo chmod 777 -R /var/www/html/mongodb/*
 sudo mkdir /var/www/html/mongodb/data
 sudo mkdir /var/www/html/mongodb/data/db
 sudo mkdir /var/www/html/mongodb/data/R0S1

@@ -903,3 +903,10 @@ f19b07,::1,POST,http://localhost/mongodb/public/index.php/login,1572810191,,302
 beb4bb,::1,GET,http://localhost/mongodb/public/index.php/user/read,1572810191,,200
 d0bfb4,::1,GET,http://localhost/mongodb/public/index.php/logout,1572810196,,302
 2d6ed8,::1,GET,http://localhost/mongodb/public/index.php/login,1572810196,,200
+07f307,::1,GET,http://localhost/mongodb/public/index.php/login,1572822065,,200
+29d622,::1,POST,http://localhost/mongodb/public/index.php/login,1572822087,,302
+3ae219,::1,GET,http://localhost/mongodb/public/index.php/login,1572822087,,200
+9ebb32,::1,POST,http://localhost/mongodb/public/index.php/login,1572822121,,302
+25ebc6,::1,GET,http://localhost/mongodb/public/index.php/user/read,1572822121,,200
+ddfca8,::1,GET,http://localhost/mongodb/public/index.php/logout,1572822126,,302
+cf6c71,::1,GET,http://localhost/mongodb/public/index.php/login,1572822127,,200
