@@ -3485,3 +3485,6 @@
 [2019-11-04 00:02:06] request.INFO: Matched route "app_user_login". {"route":"app_user_login","route_parameters":{"_route":"app_user_login","_controller":"App\\Controller\\UserController::login"},"request_uri":"http://localhost/mongodb/public/index.php/login","method":"GET"} []
 [2019-11-04 00:02:06] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2019-11-04 00:02:07] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"cf6c71"},"request_uri":"http://localhost/mongodb/public/index.php/_wdt/cf6c71","method":"GET"} []
+[2019-11-04 00:05:16] request.INFO: Matched route "app_user_login". {"route":"app_user_login","route_parameters":{"_route":"app_user_login","_controller":"App\\Controller\\UserController::login"},"request_uri":"http://localhost/mongodb/public/index.php/login","method":"GET"} []
+[2019-11-04 00:05:16] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2019-11-04 00:05:16] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"21c592"},"request_uri":"http://localhost/mongodb/public/index.php/_wdt/21c592","method":"GET"} []
