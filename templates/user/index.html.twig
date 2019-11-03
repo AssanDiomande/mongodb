@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ asset('css/user/index.css') }}">
+{% endblock %}
+
+{% block body %}
+    <body>
+    {% if not(is_granted('ROLE_ADMIN')) %}
+        <h4 class="text-danger" style="text-align: center">Vous n'avez pas les droits nécessaires pour gerer les utilisateurs</h4>
+    {% endif %}
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Mail</th>
+            <th>Status</th>
+            {% if is_granted('ROLE_ADMIN') %}
+                <th>Action 1</th>
+                <th>Action 2</th>
+            {% endif %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for f in form %}
+            <tr>
+                <td>{{ f.lastname }}</td>
+                <td>{{ f.firstname }}</td>
+                <td>{{ f.email }}</td>
+                {% if f.isAdmin == true %}
+                    <td>admin</td>
+                {% else %}
+                    <td>utilisateur</td>
+                {% endif %}
+                {% if is_granted('ROLE_ADMIN') %}
+                    <td>
+                        <a href="{{ path('app_user_update',{id:f.id}) }}" class="btn btn-info">Modifier un utilisateur</a>
+                    </td>
+                {% endif %}
+                {% if is_granted('ROLE_ADMIN') %}
+                    <td>
+                        <a href="{{ path('app_user_delete',{id:f.id}) }}"class="btn btn-danger">Supprimer un utilisateur</a>
+                    </td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+     <div class="bottom">
+        {% if is_granted('ROLE_ADMIN') %}
+            <a href="{{ path('app_user_add') }}" class="btn btn-primary">Ajouter un utilisateur</a>
+        {% endif %}
+    </div>
+    </body>
+{% endblock %}

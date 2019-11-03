@@ -1,0 +1,15 @@
+<?php
+
+namespace Symfony\Component\VarExporter\Internal;
+
+return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
+    $o = [
+        clone (Registry::$prototypes['Doctrine\\ODM\\MongoDB\\Mapping\\Annotations\\Document'] ?? Registry::p('Doctrine\\ODM\\MongoDB\\Mapping\\Annotations\\Document')),
+    ],
+    null,
+    [],
+    [
+        $o[0],
+    ],
+    []
+);

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig'%}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ asset('css/log.css')}}">
+{% endblock %}
+
+{% block title %}
+    Connexion
+{% endblock %}
+
+{% block body %}
+    <body>
+        <div class="col-lg-6" id="divLog">
+            <form method="post">
+                <h1>Connectez-vous</h1>
+                <br>
+
+                <label>Mail</label>
+                <input type="text" name="email" class="form-control" placeholder="Entrez votre adresse email" required>
+                <br>
+
+                <label>Mot de passe</label>
+                <input type="password" name="password" class="form-control" placeholder="Entrez votre mot de passe" required>
+                <br>
+
+                <button class="btn btn-lg btn-primary" type="submit">
+                    Se connecter
+                </button>
+            </form>
+        </div>
+    </body>
+
+{% endblock %}

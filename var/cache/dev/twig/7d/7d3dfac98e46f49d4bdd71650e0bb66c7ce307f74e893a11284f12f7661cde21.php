@@ -83,6 +83,8 @@ class __TwigTemplate_1b84dfbcc35d27fd6f2a86fdd5a96206a3400a1fdb00b8b3d962320dd3e
     --base-4: #666;
     --base-5: #444;
     --base-6: #222;
+    --card-label-background: #eee;
+    --card-label-color: var(--base-6);
 }
 
 .theme-dark {
@@ -122,10 +124,12 @@ class __TwigTemplate_1b84dfbcc35d27fd6f2a86fdd5a96206a3400a1fdb00b8b3d962320dd3e
     --base-4: #666;
     --base-5: #e0e0e0;
     --base-6: #f5f5f5;
+    --card-label-background: var(--tab-active-background);
+    --card-label-color: var(--tab-active-color);
 }
 
 ";
-        // line 92
+        // line 96
         echo "html, body  {
     height: 100%;
     width: 100%;
@@ -210,7 +214,7 @@ code, pre {
 }
 
 ";
-        // line 177
+        // line 181
         echo "button {
     font-family: var(--font-sans-serif);
 }
@@ -249,7 +253,7 @@ code, pre {
     text-decoration: underline;
 }
 ";
-        // line 216
+        // line 220
         echo "table, tr, th, td {
     background: var(--table-background);
     border-collapse: collapse;
@@ -305,7 +309,7 @@ table tbody td.num-col {
 }
 
 ";
-        // line 272
+        // line 276
         echo ".block {
     display: block;
 }
@@ -384,7 +388,7 @@ table tbody td.num-col {
 .label.status-error   { background: var(--background-error); color: #FFF; }
 
 ";
-        // line 351
+        // line 355
         echo ".metrics {
     margin: 1em 0 0;
     overflow: auto;
@@ -453,11 +457,11 @@ table tbody td.num-col {
     float: left;
     margin: 0 1em;
     min-height: 1px; ";
-        // line 419
+        // line 423
         echo "}
 
 ";
-        // line 423
+        // line 427
         echo ".card {
     background: var(--base-0);
     border: var(--border);
@@ -474,12 +478,12 @@ table tbody td.num-col {
     margin-top: 0;
 }
 .card .label {
-    background-color: #EEE;
-    color: var(--base-6);
+    background-color: var(--card-label-background);
+    color: var(--card-label-color);
 }
 
 ";
-        // line 445
+        // line 449
         echo ".status-success {
     background: rgba(94, 151, 110, 0.3);
 }
@@ -508,7 +512,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 474
+        // line 478
         echo ".highlight pre {
     margin: 0;
     white-space: pre-wrap;
@@ -525,7 +529,7 @@ tr.status-warning td {
 .highlight .error     { color: #C82829; }
 
 ";
-        // line 491
+        // line 495
         echo ".sf-icon {
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -551,7 +555,7 @@ tr.status-warning td {
 
 
 ";
-        // line 517
+        // line 521
         echo ".container {
     max-width: 1300px;
     padding-right: 15px;
@@ -592,7 +596,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 558
+        // line 562
         echo "#header {
     background-color: #222;
     overflow: hidden;
@@ -629,7 +633,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 595
+        // line 599
         echo "#summary .status {
     background: var(--base-2);
     border: solid rgba(0, 0, 0, 0.1);
@@ -694,7 +698,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 660
+        // line 664
         echo "#sidebar {
     background: #444;
     color: #ccc;
@@ -709,7 +713,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 675
+        // line 679
         echo "#sidebar #sidebar-shortcuts {
     background: #333;
     width: 220px;
@@ -736,7 +740,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 702
+        // line 706
         echo "#sidebar-search .form-group:first-of-type {
     padding-top: 20px;
 }
@@ -772,7 +776,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 738
+        // line 742
         echo "#menu-profiler {
     margin: 0;
     padding: 0;
@@ -876,7 +880,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 842
+        // line 846
         echo "#timeline-control {
     background: var(--table-background);
     box-shadow: var(--shadow);
@@ -908,7 +912,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 874
+        // line 878
         echo ".tab-navigation {
     margin: 0 0 1em 0;
     padding: 0;
@@ -958,7 +962,7 @@ tr.status-warning td {
 .sf-tabs .tab:not(:first-child) { display: none; }
 
 ";
-        // line 924
+        // line 928
         echo ".sf-toggle-content {
     -moz-transition: display .25s ease;
     -webkit-transition: display .25s ease;
@@ -972,7 +976,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 938
+        // line 942
         echo "[data-filters] { position: relative; }
 [data-filtered] { cursor: pointer; }
 [data-filtered]:after { content: '\\00a0\\25BE'; }
@@ -1008,7 +1012,7 @@ tr.status-warning td {
 .filter-list-choice li.active:before { color: unset; }
 
 ";
-        // line 974
+        // line 978
         echo "#twig-dump pre {
     font-size: 12px;
     line-height: 1.7;
@@ -1044,7 +1048,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1010
+        // line 1014
         echo "table.logs .metadata {
     display: block;
     font-size: 12px;
@@ -1053,7 +1057,7 @@ tr.status-warning td {
 .theme-dark tr.status-warning td { border-bottom: unset; border-top: unset; }
 
 ";
-        // line 1019
+        // line 1023
         echo ".sql-runnable {
     background: var(--base-1);
     margin: .5em 0;
@@ -1078,7 +1082,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1044
+        // line 1048
         echo "#collector-content .decision-log .voter_result td {
     border-top-width: 1px;
     border-bottom-width: 0;
@@ -1103,7 +1107,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1069
+        // line 1073
         echo "
 #collector-content .sf-validator {
     margin-bottom: 2em;
@@ -1129,7 +1133,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1095
+        // line 1099
         echo "
 #collector-content .message-bus .trace {
     border: 1px solid #DDD;
@@ -1150,7 +1154,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1116
+        // line 1120
         echo "pre.sf-dump, pre.sf-dump .sf-dump-default {
     z-index: 1000 !important;
 }
@@ -1206,7 +1210,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1172
+        // line 1176
         echo "#search-results td {
     font-family: var(--font-sans-serif);
     vertical-align: middle;
@@ -1221,7 +1225,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1187
+        // line 1191
         echo "
 .visible-small {
     display: none;
@@ -1279,7 +1283,7 @@ tr.status-warning td {
 }
 
 ";
-        // line 1245
+        // line 1249
         echo "body.width-full .container {
     max-width: 100%;
 }
@@ -1320,7 +1324,7 @@ body.theme-light #collector-content .sf-dump .trace li.selected {
 
     public function getDebugInfo()
     {
-        return array (  1283 => 1245,  1225 => 1187,  1210 => 1172,  1154 => 1116,  1133 => 1095,  1107 => 1069,  1082 => 1044,  1057 => 1019,  1048 => 1010,  1012 => 974,  976 => 938,  962 => 924,  912 => 874,  880 => 842,  776 => 738,  740 => 702,  713 => 675,  698 => 660,  633 => 595,  596 => 558,  555 => 517,  529 => 491,  512 => 474,  483 => 445,  461 => 423,  457 => 419,  388 => 351,  309 => 272,  253 => 216,  214 => 177,  129 => 92,  43 => 6,);
+        return array (  1287 => 1249,  1229 => 1191,  1214 => 1176,  1158 => 1120,  1137 => 1099,  1111 => 1073,  1086 => 1048,  1061 => 1023,  1052 => 1014,  1016 => 978,  980 => 942,  966 => 928,  916 => 878,  884 => 846,  780 => 742,  744 => 706,  717 => 679,  702 => 664,  637 => 599,  600 => 562,  559 => 521,  533 => 495,  516 => 478,  487 => 449,  465 => 427,  461 => 423,  392 => 355,  313 => 276,  257 => 220,  218 => 181,  133 => 96,  43 => 6,);
     }
 
     public function getSourceContext()
@@ -1373,6 +1377,8 @@ body.theme-light #collector-content .sf-dump .trace li.selected {
     --base-4: #666;
     --base-5: #444;
     --base-6: #222;
+    --card-label-background: #eee;
+    --card-label-color: var(--base-6);
 }
 
 .theme-dark {
@@ -1412,6 +1418,8 @@ body.theme-light #collector-content .sf-dump .trace li.selected {
     --base-4: #666;
     --base-5: #e0e0e0;
     --base-6: #f5f5f5;
+    --card-label-background: var(--tab-active-background);
+    --card-label-color: var(--tab-active-color);
 }
 
 {# Basic styles
@@ -1763,8 +1771,8 @@ table tbody td.num-col {
     margin-top: 0;
 }
 .card .label {
-    background-color: #EEE;
-    color: var(--base-6);
+    background-color: var(--card-label-background);
+    color: var(--card-label-color);
 }
 
 {# Status

@@ -382,10 +382,8 @@ class __TwigTemplate_b9183962ebf350a8f69c2c37225f99eb5c222b9d03559f685eaf3d886a2
         // line 84
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 84, $this->source); })()), 'help');
         // line 85
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 85, $this->source); })()), 'errors');
-        // line 86
         echo "</div>";
-        // line 87
+        // line 86
         echo "</div>";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -402,7 +400,7 @@ class __TwigTemplate_b9183962ebf350a8f69c2c37225f99eb5c222b9d03559f685eaf3d886a2
 
     public function getDebugInfo()
     {
-        return array (  389 => 87,  387 => 86,  385 => 85,  383 => 84,  381 => 83,  377 => 82,  373 => 81,  371 => 80,  361 => 79,  351 => 76,  341 => 75,  331 => 72,  329 => 71,  327 => 70,  323 => 69,  319 => 68,  317 => 67,  307 => 66,  297 => 63,  295 => 62,  293 => 61,  289 => 60,  285 => 59,  283 => 58,  273 => 57,  263 => 54,  259 => 52,  257 => 51,  255 => 50,  251 => 49,  249 => 48,  244 => 47,  241 => 46,  238 => 44,  236 => 43,  234 => 42,  224 => 41,  213 => 37,  210 => 36,  208 => 35,  206 => 34,  202 => 33,  200 => 32,  194 => 31,  191 => 29,  189 => 28,  187 => 27,  184 => 25,  182 => 24,  172 => 23,  162 => 18,  152 => 17,  141 => 13,  139 => 12,  136 => 10,  134 => 9,  129 => 7,  127 => 6,  117 => 5,  107 => 79,  104 => 78,  102 => 75,  99 => 74,  97 => 66,  94 => 65,  92 => 57,  89 => 56,  87 => 41,  84 => 40,  82 => 23,  79 => 22,  76 => 20,  74 => 17,  71 => 16,  69 => 5,  66 => 4,  63 => 2,  30 => 1,);
+        return array (  387 => 86,  385 => 85,  383 => 84,  381 => 83,  377 => 82,  373 => 81,  371 => 80,  361 => 79,  351 => 76,  341 => 75,  331 => 72,  329 => 71,  327 => 70,  323 => 69,  319 => 68,  317 => 67,  307 => 66,  297 => 63,  295 => 62,  293 => 61,  289 => 60,  285 => 59,  283 => 58,  273 => 57,  263 => 54,  259 => 52,  257 => 51,  255 => 50,  251 => 49,  249 => 48,  244 => 47,  241 => 46,  238 => 44,  236 => 43,  234 => 42,  224 => 41,  213 => 37,  210 => 36,  208 => 35,  206 => 34,  202 => 33,  200 => 32,  194 => 31,  191 => 29,  189 => 28,  187 => 27,  184 => 25,  182 => 24,  172 => 23,  162 => 18,  152 => 17,  141 => 13,  139 => 12,  136 => 10,  134 => 9,  129 => 7,  127 => 6,  117 => 5,  107 => 79,  104 => 78,  102 => 75,  99 => 74,  97 => 66,  94 => 65,  92 => 57,  89 => 56,  87 => 41,  84 => 40,  82 => 23,  79 => 22,  76 => 20,  74 => 17,  71 => 16,  69 => 5,  66 => 4,  63 => 2,  30 => 1,);
     }
 
     public function getSourceContext()
@@ -491,7 +489,6 @@ col-sm-10
         <div class=\"{{ block('form_group_class') }}\">
             {{- form_widget(form) -}}
             {{- form_help(form) -}}
-            {{- form_errors(form) -}}
         </div>{#--#}
     </div>
 {%- endblock checkbox_row %}
